@@ -10,16 +10,7 @@ import Foundation
 
 class Modetwo
 {
-    
-    let name = "hello"
-    
-    var school: String  {
-        get {
-            //code to execute
-            return school
-        }
-        set(newValue) {
-            //code to execute
-        }
-    }
+    var name = ""
+    var address = ""
+    var code = 0
 }

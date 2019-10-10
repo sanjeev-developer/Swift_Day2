@@ -113,10 +113,36 @@ func demo (x : String...)
 demo(x: "sanjeev","desmond", "azeo")
 
 //initialize the class
-var object = Modetwo()
-//object.set
+var objectone = Modetwo()
+objectone.name = "sanjeev"
+objectone.address = "41 toronto"
+objectone.code = 123
+
+//creating multiple objects
+var objecttwo = Modetwo()
+objecttwo.name = "desmond"
+objecttwo.address = "paris"
+objecttwo.code = 007
 
 //costum arraylist calling
 var costumArray:[Modetwo] = []
 
 var costumarray = [Modetwo]()
+costumArray.append(objectone)
+costumArray.append(objecttwo)
+
+//printing values using the loop
+for item in costumArray{
+    print("Found \(item)")
+    print("Found \(costumArray[0].name)")
+    break
+}
+
+//print using the loop from 0 to size of array
+for i in 0...costumArray.count
+{
+    print("Found \(i)")
+    print("Found \(costumArray[0].name)")
+    break
+}
+
